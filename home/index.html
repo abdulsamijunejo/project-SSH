@@ -4,16 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sticky Premium Navbar</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <header class="navbar" hight="10px">
-    <div class="container">
-      <div class="logo">
-        <img src="ChatGPT Image Apr 23, 2025, 11_31_49 AM.png" alt="Vaccination Logo" height="100px">
+  <!-- Sticky Navbar -->
+  <header class="navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo d-flex align-items-center">
+        <img src="ChatGPT Image Apr 23, 2025, 11_31_49 AM.png" alt="Vaccination Logo" class="logo-img">
       </div>
       <nav class="nav-links">
         <a href="#">Home</a>
@@ -24,20 +26,94 @@
       </nav>
     </div>
   </header>
-  
-  
 
+  <!-- Content -->
   <main>
-    <section class="content">
+    <section class="content text-center">
       <h1>Welcome to Our Premium Site</h1>
       <p>Scroll down to see the sticky navbar in action.</p>
-      <!-- Add dummy content -->
       <div style="height: 1500px;"></div>
     </section>
   </main>
 
-  <!-- footer -->
+  <section class="services py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Our Key Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3">
+            <img src="ChatGPT Image Apr 24, 2025, 03_50_10 PM.png" class="card-img-top" alt="Book Appointment">
+            <div class="card-body">
+              <h5 class="card-title">Book Appointments</h5>
+              <p class="card-text">Easily book vaccination slots at nearby centers.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3">
+            <img src="ChatGPT Image Apr 24, 2025, 04_00_27 PM.png" class="card-img-top" alt="Vaccine Info">
+            <div class="card-body">
+              <h5 class="card-title">Vaccine Info</h5>
+              <p class="card-text">Learn more about the different vaccines available.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3">
+            <img src="images/tracker.jpg" class="card-img-top" alt="Tracker">
+            <div class="card-body">
+              <h5 class="card-title">Vaccination Tracker</h5>
+              <p class="card-text">Track your doses and stay up to date with boosters.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+
+
+  <!-- new -->
+  
+
+  <section class="stats-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Vaccination Statistics</h2>
+      <table class="table table-bordered table-striped text-center">
+        <thead class="table-dark">
+          <tr>
+            <th>City</th>
+            <th>Total Vaccinated</th>
+            <th>Pending</th>
+            <th>Booster Doses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>New York</td>
+            <td>1,230,000</td>
+            <td>54,000</td>
+            <td>480,000</td>
+          </tr>
+          <tr>
+            <td>Los Angeles</td>
+            <td>980,000</td>
+            <td>34,000</td>
+            <td>360,000</td>
+          </tr>
+          <tr>
+            <td>Chicago</td>
+            <td>750,000</td>
+            <td>28,000</td>
+            <td>310,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-section about">
@@ -48,13 +124,13 @@
       <div class="footer-section links">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/centers">Vaccination Centers</a></li>
-          <li><a href="/book">Book Appointment</a></li>
-          <li><a href="/faq">FAQs</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Vaccination Centers</a></li>
+          <li><a href="#">Book Appointment</a></li>
+          <li><a href="#">FAQs</a></li>
         </ul>
       </div>
-  
+
       <div class="footer-section contact">
         <h3>Contact Us</h3>
         <p>Email: support@vaccinatenow.org</p>
@@ -66,12 +142,12 @@
         </div>
       </div>
     </div>
-  
     <div class="footer-bottom">
       <p>&copy; 2025 VaccinateNow. All rights reserved.</p>
     </div>
   </footer>
-  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="script.js" href="script.js">
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
